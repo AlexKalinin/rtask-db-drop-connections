@@ -1,5 +1,7 @@
 # rtask-db-drop-connections
 
+[![Gem Version](https://badge.fury.io/rb/rtask-db-drop-connections.png)](https://badge.fury.io/rb/rtask-db-drop-connections)
+
 Ruby gem, for dropping all connections to current database.
 
 Sometimes we got exception, while trying drop current database with opened connections by rake task:
