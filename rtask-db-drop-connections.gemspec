@@ -6,7 +6,7 @@ Gem::Specification.new do |s|
   s.description = 'Add db:drop_connections rake task to Rails Application'
   s.authors     = ['Alex Kalinin']
   s.email       = 'login.hedin@gmail.com'
-  s.files       = Dir['lib/rtask-db-drop-connection.rb']
+  s.files       = Dir['lib/rtask-db-drop-connections.rb']
   s.files       += Dir['lib/database/posgres_helper.rb']
   s.files       += Dir['lib/tasks/**/*.rake']
   s.homepage    = 'https://github.com/zencodepro/rtask-db-drop-connection'
