@@ -1,3 +1,4 @@
+require 'pg'
 require 'database/postgres_helper'
 class DbDropConnectionsTask < Rails::Railtie
   rake_tasks do
