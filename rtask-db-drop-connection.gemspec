@@ -1,5 +1,5 @@
 Gem::Specification.new do |s|
-  s.name        = 'rtask-db-drop-connection'
+  s.name        = 'rtask-db-drop-connections'
   s.version     = '1.0.0'
   s.date        = '2016-03-02'
   s.summary     = 'Add db:drop_connections rake task to Rails Application'

@@ -46,7 +46,7 @@ If you want execute `db:drop_connections` automatically before the task `db:drop
 ```ruby
 # file: lib/tasks/db/drop_connections.rake
 
-# Using gem rtask-db-drop-connection to extend db:drop functionality
+# Using gem rtask-db-drop-connections to extend db:drop functionality
 Rake::Task['db:drop'].enhance [:drop_connections]
 ```
 
@@ -66,8 +66,62 @@ Also you can call `drop_all_connections` method directly from anywhere:
 PostgresConnectionHelper::drop_all_connections 'database', 'username', 'password'
 ```
 
+## Other Installation Variants
+
+### From GitHub by Gemfile
+include this line in your rails `Gemfile`:
+
+```ruby
+gem 'rtask-db-drop-connections', '~> 1.0', git: 'https://github.com/zencodepro/rtask-db-drop-connections.git'
+```
+
+and execute
+
+```
+bundle install
+```
+
+### From GitHub by cloning
+
+Clone git repository to `#{Rails.root}/vendor/gems`
+
+```
+git clone https://github.com/zencodepro/rtask-db-drop-connections.git vendor/gems/rtask-db-drop-connections
+```
+
+then include this line in your rails `Gemfile`:
+
+```ruby
+gem 'rtask-db-drop-connections', '~> 1.0', :path => 'vendor/gems/rtask-db-drop-connections'
+```
+
+### Building from sources
+
+Uninstall old versions:
+
+```
+gem uninstall rtask-db-drop-connections-1.0.0.gem
+gem cleanup rtask-db-drop-connections
+```
+
+Clone from github
+```
+git clone https://github.com/zencodepro/rtask-db-drop-connections.git /tmp/my_rtask
+cd /tmp/my_rtask
+```
+
+Build:
+
+```
+gem build rtask-db-drop-connections.gemspec
+```
+
+Install
+```
+gem install rtask-db-drop-connections-1.0.0.gem'
+```
 
 ## TODO
 
-* Add another DBMS suport
+* Add another DBMS support
 
