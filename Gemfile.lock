@@ -1,0 +1,15 @@
+GEM
+  remote: https://rubygems.org/
+  specs:
+    byebug (8.2.2)
+    pg (0.18.4)
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  byebug (~> 8.2)
+  pg (~> 0.18.4)
+
+BUNDLED WITH
+   1.11.2
