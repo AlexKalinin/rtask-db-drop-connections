@@ -1,6 +1,7 @@
-# rtask-db-drop-connections
-
 [![Gem Version](https://badge.fury.io/rb/rtask-db-drop-connections.png)](https://badge.fury.io/rb/rtask-db-drop-connections)
+[![Code Climate](https://codeclimate.com/repos/5731857171bcda623c006004/badges/242e7b1bc0e72b338043/gpa.svg)](https://codeclimate.com/repos/5731857171bcda623c006004/feed)
+
+# rtask-db-drop-connections
 
 Ruby gem, for dropping all connections to current database.
 
